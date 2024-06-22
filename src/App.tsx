@@ -1,0 +1,24 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { Navbar } from "./components/Layout/Navbar";
+import { Dresses } from "./pages/Dresses";
+import { Dressmakers } from "./pages/Dressmakers";
+import { Blog } from "./pages/Blog";
+
+function App() {
+  return (
+    <>
+      <BrowserRouter>
+      <Navbar/>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/dresses' element={<Dresses/>}/>
+          <Route path='/dressmakers' element={<Dressmakers/>}/>
+          <Route path='/blog' element={<Blog/>}/>
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
+}
+
+export default App;
