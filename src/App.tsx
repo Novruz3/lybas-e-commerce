@@ -4,6 +4,7 @@ import { Navbar } from "./components/Layout/Navbar";
 import { Dresses } from "./pages/Dresses";
 import { Dressmakers } from "./pages/Dressmakers";
 import { Blog } from "./pages/Blog";
+import { Footer } from "./components/Layout/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path='/dressmakers' element={<Dressmakers/>}/>
           <Route path='/blog' element={<Blog/>}/>
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </>
   );
