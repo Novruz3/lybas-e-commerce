@@ -4,11 +4,11 @@ import { INavLink } from "../../interfaces/navbar";
 import { RiShoppingBag4Fill } from "react-icons/ri";
 import { IoMdClose, IoMdMenu, IoMdNotifications } from "react-icons/io";
 import { FaHeart, FaUser } from "react-icons/fa";
-import { MdLanguage } from "react-icons/md";
+import { MdLanguage, MdSearch } from "react-icons/md";
 import { useState } from "react";
 
 export const Navbar = () => {
-  const [menu, setMenu] = useState<boolean>(true);
+  const [menu, setMenu] = useState<boolean>(false);
   return (
     <>
       <div className="flex w-full h-14 bg-white shadow-md lg:px-36 justify-between px-4 py-2 items-center gap-8 xl:gap-12">
@@ -61,11 +61,25 @@ export const Navbar = () => {
           </ul>
         </div>
         <div className="search w-full hidden sm:flex">
-          <input
+          {/* <input
             type="text"
             className=" bg-gray-200 rounded-md py-1 px-2 w-full"
             placeholder="Search..."
-          />
+          /> */}
+          <form className="w-full">
+            <div className="relative">
+              <div className="absolute inset-y-0 start-0 flex items-center ps-3 text-xl">
+                <MdSearch />
+              </div>
+              <input
+                type="search"
+                id="default-search"
+                className="block w-full px-2 py-1 ps-10 rounded-md bg-gray-200 border "
+                placeholder="Search..."
+                required
+              />
+            </div>
+          </form>
         </div>
         <div className="icons flex gap-5 text-xl items-center">
           <RiShoppingBag4Fill />

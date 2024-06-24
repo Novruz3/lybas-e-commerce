@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
     <div className="flex flex-col">
-      <div className="grid lg:px-36 px-4 bg-gray-200 grid-cols-10 pt-12 pb-8">
-        <div className="flex flex-col col-span-3">
+      <div className="grid lg:px-36 px-4 bg-gray-200 md:grid-cols-10 sm:grid-cols-2 pt-12 pb-8">
+        <div className="flex flex-col md:col-span-3 col-span-1">
           <Link to="/">
             <svg
               width="100"
@@ -51,7 +51,7 @@ export const Footer = () => {
             <FaTiktok />
           </div>
         </div>
-        <div className="col-span-2 ">
+        <div className="md:col-span-2 col-span-1 mt-8 sm:mt-0">
           <p className=" font-extrabold text-lg">ABOUT US</p>
           <ul className="mt-4 flex flex-col gap-2">
             <li>About Us</li>
@@ -60,14 +60,14 @@ export const Footer = () => {
             <li>Delivery Abroad</li>
           </ul>
         </div>
-        <div className="col-span-2">
+        <div className="md:col-span-2 col-span-1 mt-8 md:mt-0">
           <p className=" font-extrabold text-lg">CONTACT US</p>
           <ul className="mt-4 flex flex-col gap-2">
             <li>+993 61010005</li>
             <li>lybas_info@gmail.com </li>
           </ul>
         </div>
-        <div className=" col-span-3">
+        <div className=" md:col-span-3 col-span-1 mt-8 md:mt-0">
           <p className=" font-extrabold text-lg uppercase">Subscribe Newsletter</p>
           <p className="text-sm mt-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
