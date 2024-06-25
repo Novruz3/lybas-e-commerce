@@ -1,7 +1,9 @@
+import { LuArrowUpRight } from "react-icons/lu";
+
 export const BlogCard = () => {
   return (
     <>
-      <div className="w-full">
+      <div className="w-full group">
         <div>
           <img
             className="w-full h-[236px] object-cover"
@@ -11,9 +13,17 @@ export const BlogCard = () => {
         </div>
         <div className="text-sm text-gray-400 font-thin mt-4">
           <p>18 August 2023 </p>
-          <p className="text-xl font-semibold text-black mt-2">
-            Nike Sportswear Futura Luxe
-          </p>
+          <div className="flex items-center justify-between">
+            <p className="text-xl font-semibold text-black mt-2">
+              Nike Sportswear Futura Luxe
+            </p>
+            <div className="group-hover:opacity-100 lg:opacity-0">
+              <button className="py-2 mt-2 px-4 text-sm w-full md:w-auto justify-center  rounded-md bg-blue-600 text-white flex items-center gap-2">
+                <LuArrowUpRight className="text-lg" />
+                More
+              </button>
+            </div>
+          </div>
           <p className="mt-2">
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.

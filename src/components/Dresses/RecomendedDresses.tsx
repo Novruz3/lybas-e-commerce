@@ -11,7 +11,7 @@ export const RecomendedDresses = () => {
           <FiArrowRight />
         </div>
       </div>
-      <div className="flex flex-col items-center gap-8 sm:grid md:grid-cols-3 sm:grid-cols-2 mt-4">
+      <div className="flex flex-col items-center gap-8 sm:grid md:grid-cols-3 sm:grid-cols-2 grid-rows-1 mt-4">
         <ProductCard/>
         <ProductCard/>
         <ProductCard/>

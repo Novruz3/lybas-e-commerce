@@ -85,7 +85,23 @@ export const Navbar = () => {
           <RiShoppingBag4Fill />
           <IoMdNotifications />
           <FaHeart className="hidden sm:flex" />
-          <MdLanguage className="hidden sm:flex" />
+          {/* <MdLanguage className="hidden sm:flex" /> */}
+          <div className="dropdown dropdown-end">
+            <div tabIndex={0} role="button">
+            <MdLanguage className="hidden sm:flex" />
+            </div>
+            <ul
+              tabIndex={0}
+              className="dropdown-content menu bg-base-100 rounded-box z-[1] w-22 p-2 shadow mt-2"
+            >
+              <li>
+                <a>English</a>
+              </li>
+              <li>
+                <a>Turkmen</a>
+              </li>
+            </ul>
+          </div>
           <div className="w-[2px] bg-black h-[20px] hidden sm:flex"></div>
           <FaUser className="hidden sm:flex" />
           <div

@@ -1,5 +1,5 @@
-import { FiArrowRight } from "react-icons/fi"
-import { BlogCard } from "./BlogCard"
+import { FiArrowRight } from "react-icons/fi";
+import { BlogCard } from "./BlogCard";
 
 export const BlogsHome = () => {
   return (
@@ -16,5 +16,5 @@ export const BlogsHome = () => {
         <BlogCard />
       </div>
     </>
-  )
-}
+  );
+};
