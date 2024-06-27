@@ -3,5 +3,25 @@
   "dresses": "Köýnekler",
   "dressmakers": "Öndürijiler",
   "blog": "Blog",
-  "search" : "Gozle..."
+  "search" : "Gozle...",
+  
+  "english" : "English",
+  "turkmen" : "Turkmence",
+
+  "recomended_dresses" : "Maslahat Berilyanler",
+  "most_popular" : "In Meshurlar",
+  "on_sale" : "Satuwda",
+  "dressMakers": "Öndürijiler",
+  "blogs" : "Tazelikler",
+  "view_all" : "Hemmesini gor",
+  "add" : "Sebede Gos",
+
+  "about_us" : "Biz Barada",
+  "contact_us" : "Habarlasmak",
+  "subscribe_newsletter" : "Bize yazylyn",
+  "delivery_payment_options" : "Eltip bermek we töleg görnüşleri",
+  "terms_conditions" : "Terms & Conditions",
+  "delivery_abroad" : "Şertler",
+  "enter_your_email" : "Email girizin",
+  "all_rights_reserved" : "Ahli hukuklar goralan"
 }

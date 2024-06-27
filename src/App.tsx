@@ -5,6 +5,8 @@ import { Dresses } from "./pages/Dresses";
 import { Dressmakers } from "./pages/Dressmakers";
 import { Blog } from "./pages/Blog";
 import { Footer } from "./components/Layout/Footer";
+import { Product } from "./pages/Product";
+import { NotFound } from "./pages/NotFound";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
           <Route path='/dresses' element={<Dresses/>}/>
           <Route path='/dressmakers' element={<Dressmakers/>}/>
           <Route path='/blog' element={<Blog/>}/>
+          <Route path='/dress/:id' element={<Product/>}/>
+          <Route path='*' element={<NotFound/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>

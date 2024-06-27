@@ -3,5 +3,25 @@
   "dresses": "Dresses",
   "dressmakers": "Dressmakers",
   "blog": "Blog",
-  "search" : "Search..."
+  "search" : "Search...",
+
+  "english" : "English",
+  "turkmen" : "Turkmen",
+
+  "recomended_dresses" : "Recommended Dresses",
+  "most_popular" : "Most Popular",
+  "on_sale" : "On Sale",
+  "dressMakers": "DressMakers",
+  "blogs" : "Blogs",
+  "view_all" : "View all",
+  "add" : "Add",
+
+  "about_us" : "About Us",
+  "contact_us" : "Contact Us",
+  "subscribe_newsletter" : "Subscribe Newsletter",
+  "delivery_payment_options" : "Delivery and Payment Options",
+  "terms_conditions" : "Terms & Conditions",
+  "delivery_abroad" : "Delivery Abroad",
+  "enter_your_email" : "Enter your email",
+  "all_rights_reserved" : "All Rights Reserved"
 }

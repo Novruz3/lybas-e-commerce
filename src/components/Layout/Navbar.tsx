@@ -92,7 +92,7 @@ export const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="dropdown-content menu bg-base-100 rounded-box z-[1] w-22 p-2 shadow mt-2"
+              className="dropdown-content menu bg-white rounded-box z-[1] w-22 p-2 shadow mt-2"
             >
               <li>
                 <a>English</a>
