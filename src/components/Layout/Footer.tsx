@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
     <div className="flex flex-col">
-      <div className="grid lg:px-36 px-4 bg-gray-200 md:grid-cols-10 sm:grid-cols-2 pt-12 pb-8">
+      <div className="grid lg:px-36 px-4 bg-gray-200 md:grid-cols-10 sm:grid-cols-2 pt-12 pb-8 lg:gap-4">
         <div className="flex flex-col md:col-span-3 col-span-1">
           <Link to="/">
             <svg

@@ -7,6 +7,8 @@ import { Blog } from "./pages/Blog";
 import { Footer } from "./components/Layout/Footer";
 import { Product } from "./pages/Product";
 import { NotFound } from "./pages/NotFound";
+import { Comments } from "./pages/Comments";
+import { DressMaker } from "./pages/DressMaker";
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
           <Route path='/' element={<Home/>}/>
           <Route path='/dresses' element={<Dresses/>}/>
           <Route path='/dressmakers' element={<Dressmakers/>}/>
+          <Route path='/dressmaker/:title' element={<DressMaker/>}/>
           <Route path='/blog' element={<Blog/>}/>
+          <Route path='/comments' element={<Comments/>}/>
           <Route path='/dress/:id' element={<Product/>}/>
           <Route path='*' element={<NotFound/>}/>
         </Routes>

@@ -5,38 +5,19 @@ import {
   AccordionBody,
 } from "@material-tailwind/react";
 
-function Icon({ id, open }) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth={2}
-      stroke="currentColor"
-      className={`${
-        id === open ? "rotate-180" : ""
-      } h-5 w-5 transition-transform`}
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-      />
-    </svg>
-  );
-}
+export default function FilterDresses() {
+  const [openAcc1, setOpenAcc1] = React.useState(true);
+  const [openAcc2, setOpenAcc2] = React.useState(false);
+  const [openAcc3, setOpenAcc3] = React.useState(false);
 
-export function AccordionCustomIcon() {
-  const [open, setOpen] = React.useState(0);
-  const [alwaysOpen, setAlwaysOpen] = React.useState(true);
-
-  const handleAlwaysOpen = () => setAlwaysOpen((cur) => !cur);
-  const handleOpen = (value) => setOpen(open === value ? 0 : value);
+  const handleOpenAcc1 = () => setOpenAcc1((cur) => !cur);
+  const handleOpenAcc2 = () => setOpenAcc2((cur) => !cur);
+  const handleOpenAcc3 = () => setOpenAcc3((cur) => !cur);
 
   return (
-    <div className="border-2 p-2 rounded-lg">
-      <Accordion open={open === 1} icon={<Icon id={1} open={open} />}>
-        <AccordionHeader className="text-base text-black" onClick={() => handleOpen(1)}>
+    <div className="px-2">
+      <Accordion open={openAcc1}>
+        <AccordionHeader className="text-md" onClick={handleOpenAcc1}>
           All Categories
         </AccordionHeader>
         <AccordionBody>
@@ -46,9 +27,9 @@ export function AccordionCustomIcon() {
           dreams.
         </AccordionBody>
       </Accordion>
-      <Accordion open={open === 2} icon={<Icon id={2} open={open} />}>
-        <AccordionHeader className="text-base text-black" onClick={() => handleOpen(2)}>
-          Dressmakers
+      <Accordion open={openAcc2}>
+        <AccordionHeader className="text-md" onClick={handleOpenAcc2}>
+          DressMakers
         </AccordionHeader>
         <AccordionBody>
           We&apos;re not always in the position that we want to be at.
@@ -57,8 +38,8 @@ export function AccordionCustomIcon() {
           dreams.
         </AccordionBody>
       </Accordion>
-      <Accordion open={open === 3} icon={<Icon id={3} open={open} />}>
-        <AccordionHeader className="text-base text-black" onClick={() => handleOpen(3)}>
+      <Accordion open={openAcc3}>
+        <AccordionHeader className="text-md" onClick={handleOpenAcc3}>
           Price
         </AccordionHeader>
         <AccordionBody>
