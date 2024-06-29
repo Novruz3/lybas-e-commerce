@@ -9,7 +9,7 @@ import { Button } from "flowbite-react";
 
 export const Product = () => {
   return (
-    <div className="lg:px-36 px-4 pb-4">
+    <div className="pb-4">
       <BreadCrumbProduct />
       <div className="grid grid-cols-5 mt-4 gap-4">
         <div className="flex flex-col xl:col-span-4 col-span-5 gap-4">

@@ -3,7 +3,7 @@ import { DressMakersCard } from "../components/DressMakers/DressMakersCard";
 
 export const Dressmakers = () => {
   return (
-    <div className="lg:px-36 px-4">
+    <>
       <div>
         <Breadcrumb aria-label="Default breadcrumb example" className="mt-4">
           <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
@@ -54,6 +54,6 @@ export const Dressmakers = () => {
           <DressMakersCard />
         </div>
       </div>
-    </div>
+    </>
   );
 };

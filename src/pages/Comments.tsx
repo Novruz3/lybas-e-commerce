@@ -3,7 +3,7 @@ import { Comment } from "../components/Comments/Comment";
 
 export const Comments = () => {
   return (
-    <div className="lg:px-36 px-4">
+    <div>
       <div>
         <Breadcrumb aria-label="Default breadcrumb example" className="mt-4">
           <Breadcrumb.Item href="#">Home</Breadcrumb.Item>

@@ -7,13 +7,13 @@ import { Header } from "../components/Header/Header";
 
 export const Home = () => {
   return (
-    <div className="lg:px-36 px-4">
+    <>
       <Header />
       <RecomendedDresses/>
       <MostPopular/>
       <OnSale/>
       <Makers/>
       <BlogsHome/>
-    </div>
+    </>
   );
 };

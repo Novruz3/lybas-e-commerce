@@ -4,7 +4,7 @@ import FilterDresses from "../components/Filters/FilterDresses"
 
 export const Dresses = () => {
   return (
-    <div className="lg:px-36 px-4">
+    <>
       <BreadCrumb/>
       <div className="md:grid md:grid-cols-5 pb-4 mt-4 gap-4">
         <div className="md:flex md:flex-col xl:col-span-1 md:col-span-2 px-2 border rounded-lg hidden">
@@ -16,6 +16,6 @@ export const Dresses = () => {
           <SmallProductCard/>
         </div>
       </div>
-    </div>
+    </>
   )
 }
