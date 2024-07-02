@@ -6,7 +6,8 @@ export const SingleBlog = () => {
       <div>
         <Breadcrumb aria-label="Default breadcrumb example" className="mt-4">
           <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
-          <Breadcrumb.Item>Blog</Breadcrumb.Item>
+          <Breadcrumb.Item href="#">Blog</Breadcrumb.Item>
+          <Breadcrumb.Item>Blog 1</Breadcrumb.Item>
         </Breadcrumb>
       </div>
       <div className="md:px-36 my-8">

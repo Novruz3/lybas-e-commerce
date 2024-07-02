@@ -12,28 +12,30 @@ import { DressMaker } from "./pages/DressMaker";
 import { CheckOut } from "./pages/CheckOut";
 import { MyAccount } from "./pages/MyAccount";
 import { SingleBlog } from "./pages/SingleBlog";
+import { AboutUs } from "./pages/AboutUs";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-      <Navbar/>
+        <Navbar />
         <div className="lg:px-36 px-4">
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/dresses' element={<Dresses/>}/>
-          <Route path='/dressmakers' element={<Dressmakers/>}/>
-          <Route path='/dressmaker/:title' element={<DressMaker/>}/>
-          <Route path='/blog' element={<Blog/>}/>
-          <Route path='/blog/:id' element={<SingleBlog/>}/>
-          <Route path='/comments' element={<Comments/>}/>
-          <Route path='/dress/:id' element={<Product/>}/>
-          <Route path='/checkout' element={<CheckOut/>}/>
-          <Route path='/account' element={<MyAccount/>}/>
-          <Route path='*' element={<NotFound/>}/>
-        </Routes>
-      </div>
-        <Footer/>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/dresses" element={<Dresses />} />
+            <Route path="/dressmakers" element={<Dressmakers />} />
+            <Route path="/dressmaker/:title" element={<DressMaker />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<SingleBlog />} />
+            <Route path="/comments" element={<Comments />} />
+            <Route path="/dress/:id" element={<Product />} />
+            <Route path="/checkout" element={<CheckOut />} />
+            <Route path="/account" element={<MyAccount />} />
+            <Route path="/about_us" element={<AboutUs />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </div>
+        <Footer />
       </BrowserRouter>
     </>
   );

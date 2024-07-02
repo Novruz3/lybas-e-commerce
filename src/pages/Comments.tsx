@@ -14,14 +14,14 @@ export const Comments = () => {
       </div>
       <div className="bg-gray-200 w-full rounded-md grid grid-cols-5 py-8 mt-4">
         <div className="col-span-1 flex-col px-8 text-gray-500 text-sm">
-          <p className="font-bold text-7xl text-black">4.5</p>
+          <p className="font-bold md:text-7xl text-4xl text-black">4.5</p>
           <p>4.5 Stars</p>
           <p>128 Comments</p>
         </div>
         <div className="col-span-4 flex-col">
-          <div className="flex items-center w-full gap-4 px-6">
-            <p>5</p>
-            <Progress progress={45} className="w-[750px] bg-white border" />
+          <div className="w-full gap-4 px-6">
+            <p>5 </p>
+            <Progress progress={45} className="flex w-full bg-white border" />
           </div>
           <div className="flex items-center w-full gap-4 px-6">
             <p>4</p>

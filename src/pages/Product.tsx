@@ -60,10 +60,6 @@ export const Product = () => {
                     <button className="py-1 px-4 border-blue-600 rounded-lg border text-blue-600">
                       Pombarh
                     </button>
-                    <div className="flex items-center text-blue-600">
-                      <p>icon</p>
-                      <p>size chart</p>
-                    </div>
                   </div>
                 </div>
                 <div className="mt-2">
