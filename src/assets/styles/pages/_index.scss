@@ -1,0 +1,21 @@
+.section-header{
+  @include flex();
+  padding: 15px 0;
+  .section-header_name{
+    font-size: 24px;
+    font-weight: bold;
+    @include tablet{
+      font-size: 18px;
+    }
+  }
+  .section-header_link{
+    color: $blue;
+    font-size: 20px;
+  }
+}
+
+.chip-set{
+  svg{
+    stroke: black;
+  }
+}

@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body{
+  overflow-x: hidden;
+  font-family: Poppi;
+}
+
+button{
+  background: none;
+  outline: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  width: 95%;
+  margin: 0 auto 0;
+  max-width: 1420px;
+}
+
+// ready classes
+
+.lybas-blue-button{
+  background: $blue;
+  color: white;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.lybas-button{
+  border-radius: 8px;
+  padding: 8px 0;
+  width: 100%;
+  font-weight: 500;
+}
+
+.account_card_links .active{
+  background: $blue;
+  color: white;
+}
+
+.input{
+  border: 1.5px solid $lightGray;
+  padding: 15px;
+  color: $gray;
+  border-radius: 8px;
+  outline: none;
+
+  &:focus{
+    border: 1.5px solid $blue;
+  }
+}
